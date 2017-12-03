@@ -1,0 +1,167 @@
+body {
+	/*background: #f7f7f7;*/
+	background-image: url(fon.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+canvas {
+	border:10px solid #000000;
+    -moz-border-image: url(borderCanvas/border_canvas.png) 30 round;
+    -webkit-border-image: url(borderCanvas/border_canvas.png) 30 round; 
+    -o-border-image: url(borderCanvas/border_canvas.png) 30 round;
+    border-image: url(borderCanvas/border_canvas.png) 30 round;
+	border-radius: 5px;
+
+	background: #1a1a1a;
+	margin-top: 30px;
+}
+
+.map {
+	width: 500px;
+	height: 400px;
+/*
+	border:10px solid #000000;
+    -moz-border-image: url(borderCanvas/border_canvas.png) 30 round;
+    -webkit-border-image: url(borderCanvas/border_canvas.png) 30 round; 
+    -o-border-image: url(borderCanvas/border_canvas.png) 30 round;
+    border-image: url(borderCanvas/border_canvas.png) 30 round;
+	border-radius: 5px;
+*/
+	/*background-image: url(Map1/map1_1.png);*/
+	background-size: 100%;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 150px;
+	margin-left: 40px;
+}
+
+.aroundCanvas {
+
+}
+                                                  /*Choose Map*/
+.map_choose {
+
+}
+
+.map_choose a {
+	float: left;
+
+}
+
+.map_choose img {
+	width: 50px;
+	height: 50px;
+	margin-left: 100px;
+	border: 3px solid #0033cc;
+	border-radius: 5px;
+}
+
+.sbros img {
+	margin-left: 610px;
+	opacity: 0.7;
+}
+
+.sbros img:hover {
+	margin-left: 610px;
+	opacity: 1;
+}
+                                                  /*Cursor for canvas*/
+.newcursor {
+cursor : url("cursor.png"), auto;
+}
+
+.gamename {
+	text-align: center;
+	font-size: 25px;
+	font-family: Orbitron, sans-serif;
+	letter-spacing: 5px;
+	color: #ffff00;
+}
+
+.gamename img {
+	width: 500px;
+	height: 150px;
+}
+
+#ebattulox p {
+	font-size: 50px;
+}
+
+
+@keyframes example {
+    0%   { left:0px; top:600px;}
+    100% { left:0px; top:000px;}
+}
+	
+	#bg{
+		display: none;
+		opacity: 0.8;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		padding: 16px;
+		
+		z-index: 100;
+		overflow: auto;
+	}
+	
+	#levelup{
+		position: relative;
+	    animation-name: example;
+	    animation-duration: 4s;
+		width: 400px;
+		height: 400px;
+		font-size: 40px;
+		font-family: segoe print, sans-serif;
+		color: orange;
+		-webkit-text-stroke: 1px black;
+		margin: 50px auto;
+		display: none;
+		z-index: 200;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		padding: 16px;
+	}
+
+	#wrap{
+		display: none;
+		opacity: 0.8;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		padding: 16px;
+		background-color: rgba(1, 1, 1, 0.725);
+		z-index: 100;
+		overflow: auto;
+	}
+	
+	#window{
+		width: 400px;
+		height: 400px;
+		margin: 50px auto;
+		display: none;
+		background: #FFDEAD;
+		z-index: 200;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		padding: 16px;
+		border-radius: 5px;
+	}
+	
+	.close{
+		margin-top: 4px;
+		margin-left: 364px;
+		cursor: pointer;
+	}

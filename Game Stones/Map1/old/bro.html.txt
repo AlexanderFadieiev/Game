@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="GameStones.css" rel="stylesheet">
+	<title>LOL</title>
+	<script src="Stones.js" defer></script>
+</head>
+<body style="background-image: url(Map1active/brothers.jpg); background-size: 100%; background-repeat: no-repeat;>
+
+</body>
+</html>

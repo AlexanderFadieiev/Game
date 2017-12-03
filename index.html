@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="GameStones.css" rel="stylesheet">
+	<title>GameStones</title>
+	<script src="Stones.js" defer></script>
+</head>
+<body style="position:relative">
+	<div id="wrap" onclick="show('none')"></div>
+	<div id="window">
+	<!-- Картинка крестика-->
+	<img class="close" onclick="show('none')" src="close.png">
+		<center style="margin-top:100px;" id="win"></center>
+	</div>
+			
+	<div id="bg" onclick="capri('none');"></div>
+	<div id="levelup">		
+		<center style="margin-top:100px;" id="nextlevel"></center>
+	</div>
+
+<div id="MOTHERFUCKINGANIMATION" style="visibility:hidden; height:100px; display:none;"> CAPRI IS WAITING FOR YOU, BITCH</div>
+
+<map name="MENU">
+	                                 <!-- x1 y1 x2 y2 x3 y3 x4 y4-->
+  		<area shape="poly" id="1" coords="40,45,92,45,75,87,17,87" onclick="paintTyr(this.id)">
+		<area shape="poly" id="2" coords="152,45,205,45,150,87,100,87" onclick="paintTyr(this.id)">
+		<area shape="poly" id="3" coords="245,45,320,45,240,87,180,87" onclick="paintTyr(this.id)">
+		<area shape="poly" id="4" coords="345,45,410,45,340,87,285,87" onclick="paintTyr(this.id)">
+		<area shape="poly" id="5" coords="435,45,500,45,440,87,385,87" onclick="paintTyr(this.id)">
+
+
+		<area shape="poly" id="10" coords="40,120,92,120,75,165,17,165" onclick="paintTyr(this.id)">
+		<area shape="poly" id="9" coords="152,120,205,120,150,165,100,165" onclick="paintTyr(this.id)">
+		<area shape="poly" id="8" coords="245,120,320,120,240,165,180,165" onclick="paintTyr(this.id)">
+		<area shape="poly" id="7" coords="345,120,410,120,340,165,285,165" onclick="paintTyr(this.id)">
+		<area shape="poly" id="6" coords="435,120,500,120,440,165,385,165" onclick="paintTyr(this.id)">
+
+		<area shape="poly" id="11" coords="40,195,92,195,75,240,17,240" onclick="paintTyr(this.id)">
+		<area shape="poly" id="12" coords="150,195,205,195,150,240,100,240" onclick="paintTyr(this.id)">
+
+		<area shape="poly" id="13" coords="152,260,205,260,150,305,100,305" onclick="paintTyr(this.id)">
+		<area shape="poly" id="14" coords="245,260,320,260,240,305,180,305" onclick="paintTyr(this.id)">
+		<area shape="poly" id="15" coords="338,260,410,260,340,305,285,305" onclick="paintTyr(this.id)">
+
+
+</map>
+	<div class="map">
+
+		<div class="gamename">
+			<img src="gamename.png">
+		</div>
+
+		<img src="Map1/map1_1.png" alt="map1" usemap="#MENU"  id="karta" width="500px">
+		<p id="ebattulox"></p>
+		
+	</div>
+
+	<div class="aroundCanvas">
+		<canvas class="newcursor" id="myCanvas" width="500" height="500">
+				Your browser does not support the canvas element.
+		</canvas>
+	</div>
+
+	<div class="map_choose">
+		<!--<a href="position.html"><img src=choose/1.png></a>-->
+		<a href="#"><img src=choose/1.png></a>
+		<div class="second">
+			<a href="#" title="map2" onclick="map2();" id="second"><img src=choose/2.png></a>
+		</div>
+		<div class="sbros">
+			<img class="newcursor" onclick="sbros();" src="sbros.png">
+		</div>
+	</div>
+</body>
+</html>
